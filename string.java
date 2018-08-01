@@ -9,7 +9,7 @@ class Ideone
 		Scanner sc=new Scanner(System.in);
 		String str=sc.nextLine();
 		if(isNumeric(str))
-			System.out.println("Yes");
+			System.out.println("yes");
 		else
 			System.out.println("No");
 	}
