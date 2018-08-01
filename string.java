@@ -6,15 +6,14 @@ class Ideone
 	public static void main (String[] args) throws java.lang.Exception
 	{
 		// your code goes here
-		Scanner sc=new Scanner(System.in);
+			Scanner sc=new Scanner(System.in);
 		String str=sc.nextLine();
-		if(isNumeric(str))
-			System.out.println("yes");
-		else
-			System.out.println("no");
-	}
-	public static boolean isNumeric(String str)
-	{
-		return str.matches("-?\\d+(\\.\\d+)?");
+		int count=1;
+		for(int i=0;i<str.length();i++)
+		{
+			if(str.charAt(i)==' ' &&str.charAt(i+1)!=' ')
+			count++;
+		}
+		System.out.println(count);
 	}
 }
