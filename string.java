@@ -11,7 +11,7 @@ class Ideone
 		if(isNumeric(str))
 			System.out.println("yes");
 		else
-			System.out.println("No");
+			System.out.println("no");
 	}
 	public static boolean isNumeric(String str)
 	{
